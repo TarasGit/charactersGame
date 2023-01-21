@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package (Threads)
 
-add_executable(charactersGame main.cpp)
+add_executable(charactersGame main.cpp Characters.h)
 target_link_libraries (charactersGame ${CMAKE_THREAD_LIBS_INIT})
 
 include(FetchContent)

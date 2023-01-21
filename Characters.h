@@ -1,5 +1,8 @@
 #ifndef CHARACTERS_H
 #define CHARACTERS_H
+#include <string>
+#include <typeinfo>
+#include <future>
 
 // no specific dragon or orc features available, so Character class could be used instead
 // but for extension purposes Dragon and Orc classes are created

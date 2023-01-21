@@ -1,8 +1,9 @@
 #include <gtest/gtest.h>
-#include "main.cpp"
-
+#include "Characters.h"
 
 TEST(HelloTest, fight_test) {
+
+  Hero h("Taras", 20, 2);
 
   //Hero hero("Taras", 20, 2);
   //Dragon dragon("Scylla", 30, 3, 0);

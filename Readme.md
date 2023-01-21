@@ -15,3 +15,5 @@ You can type asynchronously the numbers to the input.
   * google test
   * cmake
 
+## Images
+![alt text](images/game.png "Game")

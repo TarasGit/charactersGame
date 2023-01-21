@@ -17,3 +17,4 @@ You can type asynchronously the numbers to the input.
 
 ## Images
 ![alt text](images/game.png "Game")
+![alt text](images/game_tests.png "Game")

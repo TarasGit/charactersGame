@@ -7,7 +7,8 @@ You can type asynchronously the numbers to the input.
 
 
 ## Tests
-
+* test figth dragon
+* test fight orc
 
 ## Requirements
 

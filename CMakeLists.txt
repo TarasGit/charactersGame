@@ -5,7 +5,10 @@ project(trinamixGame LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(trinamixGame main.cpp)
+find_package (Threads)
+
+add_executable(charactersGame main.cpp)
+target_link_libraries (charactersGame ${CMAKE_THREAD_LIBS_INIT})
 
 include(FetchContent)
 FetchContent_Declare(

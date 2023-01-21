@@ -4,8 +4,27 @@
 #include <typeinfo>
 #include <future>
 
+
+static const bool DEAD = 0;
+
+static const int DRAGON_HEALTH = 20;
+static const int ORC_HEALTH = 7;
+static const int HERO_HEALTH = 40;
+
+static const int DRAGON_ATTACK_SPEED_MS = 2000;
+static const int ORC_ATTACK_SPEED_MS = 1500;
+
+static const int DRAGON_DAMAGE = 3;
+static const int ORC_DAMAGE = 1;
+static const int HERO_DAMAGE = 2;
+
+static const std::string ATTACK_ORC = "1"; // "attack orc";
+static const std::string ATTACK_DRAGON = "2"; // attack dragon";
+
 // no specific dragon or orc features available, so Character class could be used instead
 // but for extension purposes Dragon and Orc classes are created
+using namespace std;
+
 class Character{
 public:
     Character(string name, int health, int damage, int attack_speed_ms): name(name), health(health), my_damage(damage), attack_speed_ms(attack_speed_ms) {}
@@ -30,6 +49,7 @@ public:
     int attack_speed_ms;
 
 };
+
 
 // 1. Dragon
 class Dragon: public Character{
@@ -90,5 +110,7 @@ int Hero::reduce_health(int enemy_dagame) {
     }
     return health;
 }
+
+
 
 #endif // CHARACTERS_H

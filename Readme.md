@@ -1,4 +1,4 @@
-# TrinamixGame
+# Dragon Orc Fight Game
 This is a game where a hero fights and an orc or a dragon.
 
 ## Usage

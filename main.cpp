@@ -85,9 +85,6 @@ int main()
         if (future.wait_for(std::chrono::seconds(0)) == std::future_status::ready) {
             hero_command = future.get();
 
-            // Set a new line. Subtle race condition between the previous line
-            // and this. Some lines could be missed. To aleviate, you need an
-            // io-only thread. I'll give an example of that as well.
             future = std::async(std::launch::async, get_command);
         }
 
